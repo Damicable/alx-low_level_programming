@@ -5,7 +5,7 @@
  * of a set of prime mumbers. using _putchar
  * @n: The largest integer to print
  *
- * Return:
+ * Return: viod
  */
 void print_number(int n)
 {
