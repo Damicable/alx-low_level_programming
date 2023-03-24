@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_number - A function that prints the largest number
  * of a set of prime mumbers. using _putchar
