@@ -1,19 +1,38 @@
 #include "main.h"
+
 /**
- * string_toupper - change lowercase to uppercase
- * @s:string
- * Return:char
+ * cap_string - Capitalizes all words of a string.
+ * @str: The string to be capitalized.
+ *
+ * Return: A pointer to the changed string.
  */
-char *string_toupper(char *s)
+char *cap_string(char *str)
 {
+	int index = 0;
 
-	int i;
-
-i = 0;
-	while (*(s + i))
+	while (str[index])
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
-			*(s + i) -= 'a' - 'A';
-		i++;
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+		    str[index - 1] == '\t' ||
+		    str[index - 1] == '\n' ||
+		    str[index - 1] == ',' ||
+		    str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		    str[index - 1] == '!' ||
+		    str[index - 1] == '?' ||
+		    str[index - 1] == '"' ||
+		    str[index - 1] == '(' ||
+		    str[index - 1] == ')' ||
+		    str[index - 1] == '{' ||
+		    str[index - 1] == '}' ||
+		    index == 0)
+			str[index] -= 32;
+
+		index++;
 	}
-	return (s);
+
+	return (str);
+}
