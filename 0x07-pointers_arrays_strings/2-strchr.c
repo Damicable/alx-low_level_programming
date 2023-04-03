@@ -2,7 +2,7 @@
 /**
  * _strchr - Write a function that locates a character in a string.
  * @s: String
- * @c: Element in th string
+ * @c: Element in the string
  *
  * Return: 0
  */
