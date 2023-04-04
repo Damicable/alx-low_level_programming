@@ -4,12 +4,12 @@
  * @s: String input
  * @c: Element in the string
  *
- * Return: 0
+ * Return: always 0
  */
 
 char *_strchr(char *s, char c)
 {
-	int 1 = 0;
+	int i = 0;
 
 	for (; s[i] >= '\0'; i++)
 	{
@@ -17,5 +17,5 @@ char *_strchr(char *s, char c)
 			return (&s[i]);
 	}
 	return (0);
-
 }
+
