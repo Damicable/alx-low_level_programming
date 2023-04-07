@@ -11,5 +11,18 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (_sqrt_recursion(n, 0));
+	return (_sqrt(n, 0));
 }
+
+/**
+ * sqrt -:- Calculates natural square root
+ * @n: number to calculate the square root
+ *
+ * @i: iterate number
+ * Return:: natural square root
+ */
+
+int _sqrt(int n, int i)
+
+{
+
