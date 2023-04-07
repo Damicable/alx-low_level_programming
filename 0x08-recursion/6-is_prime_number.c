@@ -28,5 +28,5 @@ int actual_prime(int n, int i)
 	else if (n > i / 2)
 		return (1);
 	else
-		return (check(n + 1, i));
+		return (actual_prime(n + 1, i));
 }
