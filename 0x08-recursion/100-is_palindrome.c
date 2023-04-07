@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * is_palindrome - Write a function that returns 1 if a string
+ * strlen_rcursion - Write a function that returns 1 if a string
  * is a palindrome and 0 if not.
  * @s: String input
- * Return: 1
+ * Return: String length
  */
 
-int is_palindrome(char *s)
+int _strlen_rcursion(char *s)
 {
 	if (s[0] != '\0')
 		return (1 + _strlen_recursion(s + 1));
