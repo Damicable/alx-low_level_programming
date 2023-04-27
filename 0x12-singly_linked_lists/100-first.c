@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void first(void) _attribute_ ((constructor));
+void first(void) __attribute__ ((constructor));
 
 /**
  * first - Write a function that prints You're beat! and yet, you must allow,\n
