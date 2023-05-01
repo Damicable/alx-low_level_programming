@@ -9,7 +9,6 @@
  * Return: 1 (Success) otherwise, -1
  */
 
-
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *temp = *head;
