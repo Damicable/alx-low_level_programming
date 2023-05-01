@@ -5,7 +5,8 @@
  * linked list and returns the head node’s data (n).
  * @head: first element pointer
  *
- * Return: 0, if the linked list is empty.
+ * Return: 0, if the linked list is empty, otherwise the data inside
+ * node deleted
  */
 
 int pop_listint(listint_t **head)
