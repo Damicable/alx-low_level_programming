@@ -21,7 +21,7 @@ char *create_buffer(char *file)
 	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO,
-			"Error: Can not write to %s\n", file);
+			"Error: Can't write to %s\n", file);
 		exit(99);
 	}
 
@@ -29,7 +29,7 @@ char *create_buffer(char *file)
 }
 
 /**
- * close_file - Closes the file descriptors.
+ * close_file - A function that closes the file descriptors.
  * @fd: File descriptor that should be closed.
  */
 
@@ -41,7 +41,7 @@ void close_file(int fd)
 
 	if (k == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can not close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }
@@ -49,9 +49,9 @@ void close_file(int fd)
 /**
  * main - A function that copies the contents of a file to another file.
  * @argc: The number of arguments supplied to the program.
- * @argv: An array of pointers to the arguments.
+ * @argv: Arguments' pointers array
  *
- * Return: 0 on success.
+ * Return: 0
  *
  * Description: If there is an incorrect argument - exit code 97.
  * If file_from does not exist or unable to be read - exit code 98.
@@ -79,7 +79,7 @@ int main(int argc, char *argv[])
 		if (from == -1 || r == -1)
 		{
 			dprintf(STDERR_FILENO,
-				"Error: Can not read from file %s\n", argv[1]);
+				"Error: Can't read from file %s\n", argv[1]);
 			free(buffer);
 			exit(98);
 		}
@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
 		if (to == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
-				"Error: Can not write to %s\n", argv[2]);
+				"Error: Can't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
 		}
