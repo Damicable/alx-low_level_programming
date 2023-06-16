@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /**
- * main - This is a function to generate a key depending on a username for crackme5
+ * main - This is a function to generate a key depending on a
+ * username for crackme5
  * @argc: The number of arguments passed
  * @argv: arguments passed to main
  *
