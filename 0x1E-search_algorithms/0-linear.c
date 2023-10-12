@@ -7,7 +7,10 @@
  * @size: Number of elements in array
  * @value: Value to search for
  *
- * Return: first index where the value is located, otherwise -1 if the value not found
+ * Return: first index where the value is located, otherwise -1 if
+ * the value not found
+ * Description: Print the value every time you compare a value in
+ * the array to the value searching for
  */
 
 int linear_search(int *array, size_t size, int value)

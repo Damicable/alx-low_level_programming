@@ -8,7 +8,8 @@
  * @value: Value to search for
  *
  * Return: A pointer to the first node where value is located, otherwise NULL
- * Discription: Print the compared value in the list
+ * Discription: Print the compared value everytime you compare a value in the
+ * list to the value you are searching
  */
 
 listint_t *jump_list(listint_t *list, size_t size, int value)

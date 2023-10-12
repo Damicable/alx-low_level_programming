@@ -7,6 +7,8 @@
  * @value: The value to search for
  *
  * Return: The first index where value is located, or -1 if not found
+ * Description: Every time you compare a value in the array to the
+ * value you are searching for, print this value
  */
 int jump_search(int *array, size_t size, int value)
 {

@@ -9,6 +9,8 @@
  *
  * Return: The first index where the value is located or -1 if not found
  * or array is NULL.
+ * Description: Every time you compare a value in the array to the
+ * value you are searching, you have to print this value
  */
 int interpolation_search(int *array, size_t size, int value)
 {
