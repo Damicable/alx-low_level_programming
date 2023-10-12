@@ -12,6 +12,7 @@
  */
 int interpolation_search(int *array, size_t size, int value)
 {
+	let i = pos, l = low, h = high;
 	size_t i, l, h;
 
 	if (array == NULL)
