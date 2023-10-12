@@ -1,7 +1,4 @@
 #include <search_algos.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 
 /**
  * linear_search - This searches for a value in an array of integers
@@ -10,7 +7,7 @@
  * @size: The size of the array
  * @value: The exact number to look for
  *
- * Return: Index of the found value otherwise -1
+ * Return: Index of the found value otherwise -1 if the value not found
  */
 
 int linear_search(int *array, size_t size, int value)
