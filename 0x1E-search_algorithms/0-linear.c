@@ -3,11 +3,11 @@
 /**
  * linear_search - This searches for a value in an array of integers
  * using a linear search algorithm.
- * @array: The array of numbers to search
- * @size: The size of the array
- * @value: The exact number to look for
+ * @array: A pointer to the first element of the array to search in
+ * @size: Number of elements in array
+ * @value: Value to search for
  *
- * Return: Index of the found value otherwise -1 if the value not found
+ * Return: first index where the value is located, otherwise -1 if the value not found
  */
 
 int linear_search(int *array, size_t size, int value)
