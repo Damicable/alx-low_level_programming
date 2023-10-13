@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- * linear_skip - function that searches for a value in a soorted skip list
+ * linear_skip - Function that searches for a value in a sorted skip list
  * @list: A pointer to the head of the skpi list to search
  * @value: Value to search for
  *
@@ -37,7 +37,7 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 
 	for (; node->index < jump->index && node->n < value; node = node->next)
 		printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
-	printf("Value checked at index [%ld] = [&d]\n", node->index, node->n);
+	printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
 
 	return (node->n == value ? node : NULL);
 }
