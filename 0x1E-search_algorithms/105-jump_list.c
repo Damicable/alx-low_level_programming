@@ -8,6 +8,7 @@
  * @value: Value to search for
  *
  * Return: A pointer to the first node where value is located, otherwise NULL
+ * if the head of a list is NULL
  * Discription: Print the compared value everytime you compare a value in the
  * list to the value you are searching
  */
